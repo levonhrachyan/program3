@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf8">
+	<!-- <style>
+		#legend {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 800px;
+		}
+
+		.legend-color {
+			width: 30px;
+			height: 30px;
+		}
+
+		td {
+			border: 1px solid black;
+			font-size: 14px;
+			padding-left: 5px;
+		}
+	</style>	 -->
+	<script src="/socket.io/socket.io.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>	
+	<script src="./client.js"></script>
+</head>
+<body>
+<div style="align-items: flex-start">
+<button style="padding:10px;font-size: 20px;border-radius: 20px;" onclick="Dragon()"  >Dragon Create</button>
+<button  style="padding:10px;font-size: 20px;border-radius: 20px;" onclick="Dragondie()"  >Dragon die</button>
+<button  style="padding:10px;font-size: 20px;border-radius: 20px;" onclick="addGrass()"  > Add Grass</button>
+<button style="padding:10px;font-size: 20px;border-radius: 20px;" onclick="addbalans()"  > Balans for animal</button>
+</div>
+
+
+	<!-- <table id="legend">
+		<tr>
+			<td class="legend-color">Գույն</td>
+			<td>Անվանում</td>
+			<td>Շարժվում է</td>
+			<td>Ուտում է</td>
+			<td>Բազմանում է</td>
+			<td>Սատկում է</td>
+		</tr>
+
+		<tr>
+			<td class="legend-color" style="background-color:gray"></td>
+			<td>Դատարկ վանդակներ</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="legend-color" style="background-color:green"></td>
+			<td>Խոտ</td>
+			<td></td>
+			<td></td>
+			<td>Մոտակա 8 վանդակներում, 4 տակտը մեկ</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="legend-color" style="background-color:yellow"></td>
+			<td>Խոտակեր</td>
+			<td>Մոտակա 8 վանդակներում, էներգիան քչանում է 1֊ով</td>
+			<td>Խոտերին, մոտակա 8 վանդակներում, էներգիան ավելանում է 2֊ով</td>
+			<td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 16֊ից ավել է</td>
+			<td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+		</tr>
+		<tr>
+			<td class="legend-color" style="background-color:red"></td>
+			<td>Վագր</td>
+			<td>Մոտակա 16 վանդակներում, էներգիան քչանում է 1֊ով</td>
+			<td>Խոտակերներին, մոտակա 16 վանդակներում, էներգիան ավելանում է 3֊ով</td>
+			<td>Բազմանում է մոտակա տարածքներում, </td>
+			<td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+		</tr>
+		<tr>
+			<td class="legend-color" style="background-color:	orange"></td>
+			<td>առյուծ</td>
+			<td>Մոտակա 16 վանդակներում,  էներգիան քչանում է 1֊ով</td>
+			<td>վագրերին, մոտակա 16 վանդակներում, էներգիան ավելանում է 4֊ով</td>
+			<td>Բազմանում է մոտակա 4 վանդակներում, </td>
+			<td>Սատկում է, երբ էներգիան փոքր է 0֊ից </td>
+		</tr>	
+		<tr>
+			<td class="legend-color" style="background-color:rgb(255, 255, 255)"></td>
+			<td>Դրակոն</td>
+			<td>Մոտակա 8 վանդակներում, էներգիան քչանում է 1֊ով</td>
+			<td>Սպանում է  առյուծներին և վագրերին, մոտակա 8 վանդակներում</td>
+			<td></td>
+			<td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+		</tr>
+	</table>  -->
+</body>
+</html>
